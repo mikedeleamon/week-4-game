@@ -12,7 +12,7 @@ var ketchup;
 
  var pika ={
  	name: "Pikachu",
- 	hungerLvl: 21,
+ 	hungerLvl:25,
  	sounds:['pika-pi', "chaaa", "pikachu"],
 
  	eat: function(food){
@@ -145,6 +145,10 @@ function feedMe(){
 	apple = Math.ceil(Math.random() * 5);
 	candy = Math.ceil(Math.random() * 3);
 	ketchup = Math.ceil(Math.random() * 15)
+	console.log("hunger lvl is " + pika.hungerLvl);
+	console.log("apple is "+ apple);
+	console.log("candy is " + candy);
+	console.log("ketchup is " + ketchup);
 
 	while (pika.hungerLvl > 0){
 		$('#kbutt').on("click", pika.eat(ketchup));
