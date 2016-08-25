@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Pokemon battle RPG </title>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+<!-- <script type="text/javascript" src="asstes/javascript/smooth.js"></script>-->
+ <script src="https://code.jquery.com/jquery-2.2.3.js" ></script>
+<!-- <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+<div class="Contaner">
+	
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <img alt="Brand" src="pokemon.png" id="wolf">
+	      </a>
+	       <p class="navbar-text nav-right" id=brandy> Pokemon battle</p>
+		      <ul class="nav navbar-nav">
+		      <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#rules">Rules</a></li>
+			  <li><a href="#feedPika">Feed Pikachu!</a></li>
+			  <li><a href="#battle">Battle</a></li>
+			 </ul>
+		</div>
+	   </div>
+</nav>
+	<!-- first section of the page -->
+	<div id="page1">
+	  <a id="home" class="smooth"></a>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <p>
+	    	Welcome to this Pokemon game website. Here, you can battle starter pokemon and even feed Pikachu!. The games should be intuitive but if not, see the <a style="color:orange;" href="#rules">rules</a>.
+	    </p>
+	    <br><br><br><br><br>
+	</div>
+	 <!-- second section of the page -->
+	<div id="page2">
+	  <a id="rules" class="smooth"></a>
+	    <br>
+	    <h2>
+	    	Rules
+	    </h2>
+	    <br><br>
+	    <h3 id=ghost> Feed Pikachu </h3>
+	    <br><br>
+	    <p id=ghost2>
+	    	Pikachu is Hungry but he's only so hungry. Think of it as a game of blackjack. Each article of food fills the yellow mouse to a certain amount. Get the right amount and Pikachu will be full and happy. Give pikachu too much and he'll get sick and faint.
+	    </p>
+	    <br>
+	    <br>
+	    <h3> Starter Battle </h3>
+	    <p> This is pretty explanitory if youve ever played Pokemon before. It's a turn based showdown to the finish</p>
+	</div>
+	<!-- third section of the page -->
+	<div id="page3">
+	  <a id="feedPika" class="smooth"></a>
+	    <h1> Let's feed Pikachu </h1>
+
+	    <br>
+	    <br>
+	    <button type="button" id="feedStart" class="btn btn-success">Play</button>
+	    <div class=" row feedRow1">
+		    
+		    <div class="col-lg-4"></div>
+
+		    <div class="col-lg-4">
+		    <img src="assets/images/Pikachu.png" class="img-responsive">
+		    </div>
+
+		    <div class="col-lg-2"></div>
+		    <div class="col-lg-2"></div>
+		    <br><br><br>
+
+		</div>
+		<div class=" row feedRow2">
+			<br>
+			<div class="col-lg-12">
+				<h2>Give Pikachu food!</h2>
+				<h4 id="sayIt"></h4>
+			</div>
+
+			<div class="row feedrow3">
+			  <div class="col-sm-6 col-md-4 col-lg-4">
+			    <div class="thumbnail foodthumb">
+			      <img src="assets/images/apple.png" alt="feed pikachu an apple" class="img-responsive">
+			      <div class="caption">
+			        <h3>Apple</h3>
+			        <p>all pikachus love apples</p>
+			        <p><a class="btn btn-success appbutt" role="button">Feed</a> <!-- <a href="#" class="btn btn-default" role="button">Button</a> --></p>
+			      </div>
+			    </div>
+			  </div>
+			
+			  <div class="col-sm-6 col-md-4 col-lg-4">
+			    <div class="thumbnail foodthumb">
+			      <img src="assets/images/ketchup.png"  alt="feed pikachu ketchup" class="img-responsive">
+			      <div class="caption">
+			        <h3>ketchup</h3>
+			        <p>Ash's Pikachu loves ketchup</p>
+			        <p><a  class="btn btn-success kbutt" role="button">Feed</a> <!-- <a href="#" class="btn btn-default" role="button">Button</a> --></p>
+			      </div>
+			    </div>
+			    </div>
+
+			    <div class="col-sm-6 col-md-4 col-lg-4">
+			    <div class="thumbnail foodthumb">
+			      <img src="assets/images/candy.png" alt="feed pikachu candy" class="img-responsive">
+			      <div class="caption">
+			        <h3>ketchup</h3>
+			        <p>who doesn't loves candy?</p>
+			        <p><a class="btn btn-success canbutt" role="button">Feed</a> <!-- <a href="#" class="btn btn-default" role="button">Button</a> --></p>
+			      </div>
+
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	 <!-- fourth section of the page -->
+	<div id="page4">
+	  <a id="battle" class="smooth"></a>
+
+	  <br><br><br><br><br>
+	    Contact page content goes here.
+	</div>
+
+
+</div>
+
+</body>
+</html>

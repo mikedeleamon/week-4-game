@@ -1,0 +1,25 @@
+
+.navbar{
+	
+}
+
+h1,h2,h3,h4,p{
+	color: #ccc;
+}
+
+#page1{
+	background-color: #0066ff;
+	height: 1000px;
+	margin-top: 20px;
+}
+
+#page2{
+	color: #333;
+	background-color: #ffbb33;
+	height: 1000px;
+}
+
+#page3{
+	background-color: #222;
+	height: 1000px;
+}
