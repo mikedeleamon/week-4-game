@@ -16,7 +16,13 @@ var ketchup;
  	sounds:['pika-pi', "chaaa", "pikachu"],
 
  	eat: function(food){
- 		hungerLvl= hungerLvl-food;
+ 		this.hungerLvl = this.hungerLvl - food;
+ 		console.log("this is the new level "+this.hungerLvl);
+ 		
+ 		// generates random sound for pikachu to say thank after he's been fed
+ 		var speak = Math.floor(Math.random() * 3);
+		$("#sayIt").html(pika.sounds[speak]);
+		console.log(pika.sounds[sounds]);
  	},
  	isFull: function(){
 
@@ -149,19 +155,19 @@ function feedMe(){
 	console.log("apple is "+ apple);
 	console.log("candy is " + candy);
 	console.log("ketchup is " + ketchup);
-
-	while (pika.hungerLvl > 0){
+$('#appbutt').on("click", pika.eat(apple));
 		$('#kbutt').on("click", pika.eat(ketchup));
-		// generates random sound for pikachu to say thank after he's been fed
-		var speak = Math.floor(Math.random() * 3);
-		$().html(pika.sounds[speak]);
-		console.log(pika.sounds[sounds]);
+		$('#canbutt').on("click", pika.eat(candy));
+	while (pika.hungerLvl > 0){
+		
+		
+		
 
 		if (pika.isFull==true){
-			$("#sayIt").html("This pikachu is full, Thanks for feeding him!")
+			$("#fullmaybe").html("This pikachu is full, Thanks for feeding him!")
 		}
 		else if(pika.isStuffed==true){
-			$().html("This pikachu ate too much and is now sick, we can't do anything with this one \n feed another?")
+			$("#fullmaybe").html("This pikachu ate too much and is now sick, we can't do anything with this one \n feed another?")
 		}
 	}
 
